@@ -1,4 +1,4 @@
-# Keeps Casks/stroke.rb in sync with the latest broisnischal/stroke release.
+# Keeps Casks/stroke.rb in sync with the latest stroke-app/stroke release.
 #
 # Runs on a schedule (and on demand), needs no PAT — it reads the public release
 # and commits to this repo with the built-in GITHUB_TOKEN. The main repo can also
@@ -24,7 +24,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          REPO=broisnischal/stroke
+          REPO=stroke-app/stroke
           TAG=$(gh release view -R "$REPO" --json tagName -q .tagName)
           VERSION="${TAG#v}"
 
