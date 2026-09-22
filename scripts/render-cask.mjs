@@ -20,10 +20,10 @@ const cask = `cask "stroke" do
     sha256 "${INTEL_SHA}"
   end
 
-  url "https://github.com/broisnischal/stroke/releases/download/v#{version}/stroke_#{version}_#{arch}.dmg"
+  url "https://github.com/stroke-app/stroke/releases/download/v#{version}/stroke_#{version}_#{arch}.dmg"
   name "Stroke"
   desc "Fast desktop database client for PostgreSQL, MySQL, SQLite, and Cloudflare D1"
-  homepage "https://github.com/broisnischal/stroke"
+  homepage "https://github.com/stroke-app/stroke"
 
   app "Stroke.app"
 
