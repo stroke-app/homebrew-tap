@@ -1,19 +1,19 @@
 cask "stroke" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.0.0"
+  version "2.1.0"
 
   on_arm do
-    sha256 "c1b51c91ccafd5174b9f905e2b8ec7b9ae55c3c88dc513c6ba259a08ad3f0f1a"
+    sha256 "77b13dda8649f96291043dd24f584246f90118897181bfbdbfd5eaf611d62e13"
   end
   on_intel do
-    sha256 "107a3fa7c0cdf96f31a6a4f76848c45b521b1cc82c4f37f815c511152fe66d36"
+    sha256 "27ab2e19182455b0411e33a5882b7815b4cc480efc763a2a24b402e26ee6ef4a"
   end
 
-  url "https://github.com/broisnischal/stroke/releases/download/v#{version}/stroke_#{version}_#{arch}.dmg"
+  url "https://github.com/stroke-app/stroke/releases/download/v#{version}/stroke_#{version}_#{arch}.dmg"
   name "Stroke"
   desc "Fast desktop database client for PostgreSQL, MySQL, SQLite, and Cloudflare D1"
-  homepage "https://github.com/broisnischal/stroke"
+  homepage "https://github.com/stroke-app/stroke"
 
   app "Stroke.app"
 
