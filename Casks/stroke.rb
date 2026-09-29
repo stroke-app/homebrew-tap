@@ -1,13 +1,13 @@
 cask "stroke" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.2.1"
+  version "2.2.2"
 
   on_arm do
-    sha256 "0071d50b7362fd18bfdd600d9654f58ce105c92c22fe21db648fd19aea6e7cf4"
+    sha256 "04e553b45fc4bc737db2fe2fcdf39fd3edc83c24e45edc2b300c9efe8a424b24"
   end
   on_intel do
-    sha256 "14b4c3cacbeeeb5fbcca3150b014a932834c585549e402c34e423a29f3f3aa28"
+    sha256 "bc2f05a81a49bf69e28a08ca0b09aa21dc6cb54fd8f3f5c945f3086a42c307f4"
   end
 
   url "https://github.com/stroke-app/stroke/releases/download/v#{version}/stroke_#{version}_#{arch}.dmg"
