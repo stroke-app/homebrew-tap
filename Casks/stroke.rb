@@ -15,6 +15,10 @@ cask "stroke" do
   desc "Fast desktop database client for PostgreSQL, MySQL, SQLite, and Cloudflare D1"
   homepage "https://github.com/stroke-app/stroke"
 
+  # Stroke updates itself in place, so `brew upgrade` leaves it alone instead
+  # of reinstalling over a newer build the app already put there.
+  auto_updates true
+
   app "Stroke.app"
 
   # Stroke is ad-hoc signed (no paid Apple Developer cert), so strip the
