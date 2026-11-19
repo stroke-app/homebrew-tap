@@ -1,23 +1,19 @@
 cask "stroke" do
   arch arm: "aarch64", intel: "x64"
 
-  version "2.3.0"
+  version "3.0.0"
 
   on_arm do
-    sha256 "1e9433a815af984a6ef4abf394d711c62f2e88f4f6b6c0c19a0a2b77a65729fd"
+    sha256 "47c01d767a7cd193872c4be285d8eb7260e457b2122e82915ef4dfe20d37c20a"
   end
   on_intel do
-    sha256 "3d6a7830dceb7201bfcba4442ae3cde1b1487601528e8c1c7a80f7180b4b71b2"
+    sha256 "fe51f75a20f25f0dc8526b51ec1c13c094d94b3152f7f55d977c935c83cf8401"
   end
 
   url "https://github.com/stroke-app/stroke/releases/download/v#{version}/stroke_#{version}_#{arch}.dmg"
   name "Stroke"
   desc "Fast desktop database client for PostgreSQL, MySQL, SQLite, and Cloudflare D1"
   homepage "https://github.com/stroke-app/stroke"
-
-  # Stroke updates itself in place, so `brew upgrade` leaves it alone instead
-  # of reinstalling over a newer build the app already put there.
-  auto_updates true
 
   app "Stroke.app"
 
